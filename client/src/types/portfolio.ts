@@ -16,7 +16,10 @@ export interface PortfolioData {
   name: string;
   title: string;
   bio: string;
+  aboutMe: string;
   email: string;
+  linkedin: string;
+  location: string;
   skills: string[];
   experience: Experience[];
   projects: Project[];

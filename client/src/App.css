@@ -181,6 +181,38 @@
   font-size: 0.875rem;
 }
 
+/* About Me */
+.about-me .about-text {
+  max-width: 640px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.about-location {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.about-linkedin {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.about-linkedin:hover {
+  color: var(--color-primary-hover);
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .hero h1 {
