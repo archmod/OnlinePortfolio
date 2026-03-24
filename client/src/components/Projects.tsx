@@ -21,9 +21,22 @@ export function Projects({ projects }: ProjectsProps) {
               ))}
             </div>
             {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                View Project &rarr;
-              </a>
+              project.link.startsWith("#") ? (
+                <a
+                  href={project.link}
+                  className="project-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector(project.link!)?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  View Project &rarr;
+                </a>
+              ) : (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  View Project &rarr;
+                </a>
+              )
             )}
           </div>
         ))}

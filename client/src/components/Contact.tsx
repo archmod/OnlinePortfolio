@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface ContactProps {
   email: string;
   linkedin: string;
@@ -23,6 +25,9 @@ export function Contact({ email, linkedin }: ContactProps) {
         >
           Connect on LinkedIn
         </a>
+        <Link className="btn btn-outline" to="/how-it-was-built">
+          How This Site Was Built
+        </Link>
       </div>
     </section>
   );

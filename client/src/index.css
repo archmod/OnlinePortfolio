@@ -6,17 +6,36 @@
   padding: 0;
 }
 
+/* Light theme (default) */
 :root {
-  --color-bg: #0f172a;
-  --color-surface: #1e293b;
-  --color-primary: #38bdf8;
-  --color-primary-hover: #7dd3fc;
-  --color-text: #e2e8f0;
-  --color-text-muted: #94a3b8;
-  --color-heading: #f8fafc;
-  --color-border: #334155;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-primary: #0ea5e9;
+  --color-primary-hover: #0284c7;
+  --color-primary-light: #e0f2fe;
+  --color-text: #334155;
+  --color-text-muted: #64748b;
+  --color-heading: #0f172a;
+  --color-border: #e2e8f0;
+  --color-nav-bg: rgba(248, 250, 252, 0.85);
+  --color-accent: #6366f1;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --max-width: 900px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-bg: #0b1121;
+  --color-surface: #151e36;
+  --color-primary: #38bdf8;
+  --color-primary-hover: #7dd3fc;
+  --color-primary-light: #0c2744;
+  --color-text: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-heading: #f1f5f9;
+  --color-border: #1e3048;
+  --color-nav-bg: rgba(11, 17, 33, 0.85);
+  --color-accent: #818cf8;
 }
 
 html {
@@ -29,6 +48,7 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
 }
 
 #root {

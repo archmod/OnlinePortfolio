@@ -1,4 +1,5 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import { usePortfolio } from "./hooks/usePortfolio";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
@@ -8,8 +9,9 @@ import { Experience } from "./components/Experience";
 import { LookingFor } from "./components/LookingFor";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
+import { HowItWasBuiltPage } from "./components/HowItWasBuilt";
 
-function App() {
+function Portfolio() {
   const { data, loading, error } = usePortfolio();
 
   if (loading) return <div className="loader">Loading…</div>;
@@ -34,6 +36,15 @@ function App() {
         </footer>
       </div>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/how-it-was-built" element={<HowItWasBuiltPage />} />
+    </Routes>
   );
 }
 

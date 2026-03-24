@@ -77,6 +77,23 @@ export function getPortfolio(): PortfolioData {
           "Cleaned rooms, made beds, and kept facilities organised. Full-time commercial cleaning role in Australia.",
       },
     ],
-    projects: [],
+    projects: [
+      {
+        title: "This Portfolio Website",
+        description:
+          "A custom full-stack portfolio built from scratch with React 19, TypeScript, Vite, and Express 5. Features light/dark theme, responsive design, Framer Motion animations, and a data-driven architecture with a REST API backend. Deployed on DigitalOcean with a custom domain via Google Workspace.",
+        technologies: [
+          "React 19",
+          "TypeScript",
+          "Vite 8",
+          "Express 5",
+          "Framer Motion",
+          "CSS Custom Properties",
+          "Node.js",
+          "DigitalOcean",
+        ],
+        link: "#how-it-was-built",
+      },
+    ],
   };
 }

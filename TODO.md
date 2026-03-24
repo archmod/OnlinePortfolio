@@ -26,7 +26,7 @@
 - [x] Pick a clean, professional color scheme
 - [x] Add a navigation bar with smooth scrolling to sections
 - [x] Make sure it looks great on mobile (recruiters browse on phones)
-- [ ] Add light/dark theme toggle
+- [x] Add light/dark theme toggle
 - [x] Add subtle animations for a modern feel
 - [x] Add a favicon and page title with your name
 
