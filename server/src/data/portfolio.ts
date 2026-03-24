@@ -12,6 +12,11 @@ export interface Experience {
   description: string;
 }
 
+export interface SkillGroup {
+  category: string;
+  items: string[];
+}
+
 export interface PortfolioData {
   name: string;
   title: string;
@@ -20,7 +25,7 @@ export interface PortfolioData {
   email: string;
   linkedin: string;
   location: string;
-  skills: string[];
+  skills: SkillGroup[];
   experience: Experience[];
   projects: Project[];
 }
@@ -36,14 +41,18 @@ export function getPortfolio(): PortfolioData {
     linkedin: "https://www.linkedin.com/in/angelina-stillman-0a93b8375/",
     location: "Pascoe Vale, Victoria, Australia",
     skills: [
-      "Commercial Cleaning",
-      "Food Safety",
-      "Customer Service",
-      "Housekeeping",
-      "Cash Register Operation",
-      "Food & Drink Preparation",
-      "Teamwork",
-      "Time Management",
+      {
+        category: "Hospitality",
+        items: ["Customer Service", "Cash Register Operation", "Food & Drink Preparation", "Food Safety"],
+      },
+      {
+        category: "Cleaning",
+        items: ["Commercial Cleaning", "Housekeeping", "Room Preparation", "Restocking"],
+      },
+      {
+        category: "Strengths",
+        items: ["Teamwork", "Time Management", "Reliability", "Fast Learner", "Attention to Detail"],
+      },
     ],
     experience: [
       {

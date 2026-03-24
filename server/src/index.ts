@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files (e.g. resume PDF) from server/public
+app.use("/public", express.static(path.join(__dirname, "../public")));
+
 app.use("/api/portfolio", portfolioRouter);
 
 app.get("/api/health", (_req, res) => {

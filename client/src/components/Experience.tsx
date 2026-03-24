@@ -6,7 +6,7 @@ interface ExperienceProps {
 
 export function Experience({ experience }: ExperienceProps) {
   return (
-    <section className="section">
+    <section id="experience" className="section">
       <h2>Experience</h2>
       <div className="timeline">
         {experience.map((exp) => (

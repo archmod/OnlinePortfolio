@@ -12,6 +12,11 @@ export interface Experience {
   description: string;
 }
 
+export interface SkillGroup {
+  category: string;
+  items: string[];
+}
+
 export interface PortfolioData {
   name: string;
   title: string;
@@ -20,7 +25,7 @@ export interface PortfolioData {
   email: string;
   linkedin: string;
   location: string;
-  skills: string[];
+  skills: SkillGroup[];
   experience: Experience[];
   projects: Project[];
 }

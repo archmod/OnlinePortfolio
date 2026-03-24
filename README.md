@@ -64,10 +64,10 @@ This compiles the server TypeScript to `server/dist/` and builds the client to `
 
 ## API Endpoints
 
-| Method | Endpoint          | Description              |
-| ------ | ----------------- | ------------------------ |
-| GET    | `/api/health`     | Health check             |
-| GET    | `/api/portfolio`  | Returns all portfolio data |
+| Method | Endpoint         | Description                |
+| ------ | ---------------- | -------------------------- |
+| GET    | `/api/health`    | Health check               |
+| GET    | `/api/portfolio` | Returns all portfolio data |
 
 ## Customizing Your Portfolio
 

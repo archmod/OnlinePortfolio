@@ -7,7 +7,7 @@ interface HeroProps {
 
 export function Hero({ name, title, bio, email }: HeroProps) {
   return (
-    <header className="hero">
+    <header id="hero" className="hero">
       <h1>{name}</h1>
       <p className="title">{title}</p>
       <p className="bio">{bio}</p>

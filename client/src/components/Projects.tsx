@@ -21,12 +21,7 @@ export function Projects({ projects }: ProjectsProps) {
               ))}
             </div>
             {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
                 View Project &rarr;
               </a>
             )}

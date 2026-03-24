@@ -6,7 +6,7 @@ interface AboutMeProps {
 
 export function AboutMe({ aboutMe, location, linkedin }: AboutMeProps) {
   return (
-    <section className="section about-me">
+    <section id="about" className="section about-me">
       <h2>About Me</h2>
       <p className="about-text">{aboutMe}</p>
       <div className="about-details">
