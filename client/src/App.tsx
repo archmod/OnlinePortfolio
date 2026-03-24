@@ -9,7 +9,9 @@ import { Experience } from "./components/Experience";
 import { LookingFor } from "./components/LookingFor";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
+import { Resume } from "./components/Resume";
 import { HowItWasBuiltPage } from "./components/HowItWasBuilt";
+import { FitnessPlanPage } from "./components/FitnessPlan";
 
 function Portfolio() {
   const { data, loading, error } = usePortfolio();
@@ -26,6 +28,7 @@ function Portfolio() {
         <AboutMe aboutMe={data.aboutMe} location={data.location} linkedin={data.linkedin} />
         <Skills skills={data.skills} />
         <Experience experience={data.experience} />
+        <Resume />
         <LookingFor />
         {data.projects.length > 0 && <Projects projects={data.projects} />}
         <Contact email={data.email} linkedin={data.linkedin} />
@@ -44,6 +47,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="/how-it-was-built" element={<HowItWasBuiltPage />} />
+      <Route path="/fitness-plan" element={<FitnessPlanPage />} />
     </Routes>
   );
 }

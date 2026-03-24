@@ -67,12 +67,12 @@
 
 .nav-links__item a:hover {
   color: var(--color-heading);
-  background: var(--color-primary-light);
+  background: rgba(var(--color-primary-rgb), 0.15);
 }
 
 .nav-links__item a.active {
   color: var(--color-primary);
-  background: var(--color-primary-light);
+  background: rgba(var(--color-primary-rgb), 0.2);
 }
 
 .nav-underline {
@@ -142,7 +142,7 @@
 .nav-drawer li a:hover,
 .nav-drawer li a.active {
   color: var(--color-primary);
-  background: var(--color-primary-light);
+  background: rgba(var(--color-primary-rgb), 0.2);
 }
 
 .nav-right {
@@ -202,7 +202,7 @@
   margin: 0 auto 1.25rem;
   display: block;
   border: 3px solid var(--color-primary);
-  box-shadow: 0 0 0 6px var(--color-primary-light), 0 8px 24px rgba(14, 165, 233, 0.15);
+  box-shadow: 0 0 0 6px var(--color-primary-light), 0 8px 24px rgba(var(--color-primary-rgb), 0.15);
 }
 
 .hero h1 {
@@ -304,7 +304,7 @@
 
 .timeline-item:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.08);
+  box-shadow: 0 4px 16px rgba(var(--color-primary-rgb), 0.08);
 }
 
 .timeline-logo {
@@ -366,7 +366,7 @@
 
 .project-card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.08);
+  box-shadow: 0 4px 16px rgba(var(--color-primary-rgb), 0.08);
   transform: translateY(-2px);
 }
 
@@ -581,12 +581,12 @@
 .btn-primary {
   background: var(--color-primary);
   color: #fff;
-  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .btn-primary:hover {
   background: var(--color-primary-hover);
-  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 4px 16px rgba(var(--color-primary-rgb), 0.4);
 }
 
 .btn-outline {
@@ -774,5 +774,285 @@
 
   .how-built-table {
     font-size: 0.8rem;
+  }
+}
+
+/* Resume */
+.resume {
+  text-align: center;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Fitness Plan */
+.fitness-plan h2 {
+  text-align: center;
+}
+
+.fitness-intro {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.fitness-section {
+  margin-bottom: 3rem;
+}
+
+.fitness-section h3 {
+  font-size: 1.35rem;
+  color: var(--color-heading);
+  margin-bottom: 1.25rem;
+}
+
+/* Weekly Overview Badges */
+.fitness-week-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.fitness-day-badge {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fitness-day-badge:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.fitness-day-emoji {
+  font-size: 1.5rem;
+}
+
+.fitness-day-badge strong {
+  color: var(--color-heading);
+  font-size: 0.95rem;
+}
+
+.fitness-day-focus {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+/* Workout Cards */
+.fitness-workout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.25rem;
+}
+
+.fitness-workout-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fitness-workout-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.fitness-workout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fitness-workout-emoji {
+  font-size: 2rem;
+}
+
+.fitness-workout-header h4 {
+  color: var(--color-heading);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.fitness-workout-focus {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.fitness-exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.fitness-exercise-table th {
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-heading);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.fitness-exercise-table td {
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.fitness-exercise-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fitness-exercise-table tr:hover td {
+  background: var(--color-primary-light);
+}
+
+/* Meal Plan */
+.fitness-meal-intro {
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.fitness-meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.fitness-meal-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fitness-meal-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.fitness-meal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fitness-meal-emoji {
+  font-size: 1.75rem;
+}
+
+.fitness-meal-header h4 {
+  color: var(--color-heading);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.fitness-meal-time {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.fitness-meal-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fitness-meal-options li {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.fitness-meal-options li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Gym Tips */
+.fitness-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.fitness-tip-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fitness-tip-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.fitness-tip-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.fitness-tip-card h4 {
+  color: var(--color-heading);
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.fitness-tip-card p {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .fitness-week-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fitness-workout-grid {
+    grid-template-columns: 1fr;
+  }
+  .fitness-meal-grid {
+    grid-template-columns: 1fr;
+  }
+  .fitness-tips-grid {
+    grid-template-columns: 1fr;
   }
 }

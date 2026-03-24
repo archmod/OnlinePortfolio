@@ -37,7 +37,7 @@ export function getPortfolio(): PortfolioData {
     bio: "Reliable and hard-working professional with experience in housekeeping, café service, and customer-facing roles. Organised, detail-oriented, and always ready to learn.",
     aboutMe:
       "Hi, I'm Angelina! I'm based in Pascoe Vale, Victoria, and I'm passionate about delivering great service and keeping things running smoothly — whether that's behind a coffee machine, at a hotel front desk, or tidying up a guest room. I've worked across hospitality and housekeeping roles, picking up skills in commercial cleaning, food safety, customer service, and teamwork along the way. I'm currently open to opportunities as a Bartender, Café Worker, Housekeeper, or Pick Packer. I pride myself on being organised, dependable, and a fast learner. If you're looking for someone who shows up, works hard, and brings a positive attitude — let's connect!",
-    email: "angelina.nicola9@gmail.com",
+    email: "angelina@angelinastillman.com",
     linkedin: "https://www.linkedin.com/in/angelina-stillman-0a93b8375/",
     location: "Pascoe Vale, Victoria, Australia",
     skills: [
@@ -93,6 +93,19 @@ export function getPortfolio(): PortfolioData {
           "DigitalOcean",
         ],
         link: "#how-it-was-built",
+      },
+      {
+        title: "My Fitness Plan 💪",
+        description:
+          "My personal workout routine, gym schedule, and meal plan — all in one place. Includes a weekly training split, exercise breakdowns, and nutrition guide to keep me on track with my fitness goals.",
+        technologies: [
+          "Workout Routine",
+          "Meal Plan",
+          "Gym Schedule",
+          "Nutrition",
+          "Fitness Goals",
+        ],
+        link: "/fitness-plan",
       },
     ],
   };

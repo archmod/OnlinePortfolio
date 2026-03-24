@@ -8,17 +8,18 @@
 
 /* Light theme (default) */
 :root {
-  --color-bg: #f8fafc;
+  --color-bg: #fdf2f8;
   --color-surface: #ffffff;
-  --color-primary: #0ea5e9;
-  --color-primary-hover: #0284c7;
-  --color-primary-light: #e0f2fe;
+  --color-primary: #ec4899;
+  --color-primary-hover: #db2777;
+  --color-primary-light: #fce7f3;
+  --color-primary-rgb: 236, 72, 153;
   --color-text: #334155;
   --color-text-muted: #64748b;
   --color-heading: #0f172a;
-  --color-border: #e2e8f0;
-  --color-nav-bg: rgba(248, 250, 252, 0.85);
-  --color-accent: #6366f1;
+  --color-border: #f3e8ef;
+  --color-nav-bg: rgba(253, 242, 248, 0.88);
+  --color-accent: #a855f7;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --max-width: 900px;
 }
@@ -30,6 +31,7 @@
   --color-primary: #38bdf8;
   --color-primary-hover: #7dd3fc;
   --color-primary-light: #0c2744;
+  --color-primary-rgb: 56, 189, 248;
   --color-text: #cbd5e1;
   --color-text-muted: #94a3b8;
   --color-heading: #f1f5f9;

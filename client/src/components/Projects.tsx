@@ -1,4 +1,5 @@
 import type { Project } from "../types/portfolio";
+import { Link } from "react-router-dom";
 
 interface ProjectsProps {
   projects: Project[];
@@ -6,7 +7,7 @@ interface ProjectsProps {
 
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <section className="section">
+    <section id="projects" className="section">
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project) => (
@@ -32,6 +33,10 @@ export function Projects({ projects }: ProjectsProps) {
                 >
                   View Project &rarr;
                 </a>
+              ) : project.link.startsWith("/") ? (
+                <Link to={project.link} className="project-link">
+                  View Project &rarr;
+                </Link>
               ) : (
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
                   View Project &rarr;
