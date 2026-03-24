@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import path from "path";
 import portfolioRouter from "./routes/portfolio";
 
 const app = express();
@@ -14,6 +15,13 @@ app.get("/api/health", (_req, res) => {
   res.json({ status: "ok" });
 });
 
+// In production, serve the built React client
+const clientDist = path.join(__dirname, "../../client/dist");
+app.use(express.static(clientDist));
+app.get("*", (_req, res) => {
+  res.sendFile(path.join(clientDist, "index.html"));
+});
+
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

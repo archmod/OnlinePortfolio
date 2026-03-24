@@ -11,12 +11,7 @@ export function AboutMe({ aboutMe, location, linkedin }: AboutMeProps) {
       <p className="about-text">{aboutMe}</p>
       <div className="about-details">
         <span className="about-location">📍 {location}</span>
-        <a
-          className="about-linkedin"
-          href={linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="about-linkedin" href={linkedin} target="_blank" rel="noopener noreferrer">
           LinkedIn Profile →
         </a>
       </div>

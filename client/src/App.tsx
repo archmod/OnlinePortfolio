@@ -21,7 +21,9 @@ function App() {
       <Experience experience={data.experience} />
       {data.projects.length > 0 && <Projects projects={data.projects} />}
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} {data.name}. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} {data.name}. All rights reserved.
+        </p>
       </footer>
     </div>
   );
